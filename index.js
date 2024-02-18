@@ -45,9 +45,10 @@ let marcaPortatil2 = Portatil["marca"];
 let grupos = Concierto.grupos;
 
 //8.- Dado un **objeto** de nombre **Led** obtén el valor de las propiedades **rojo, verde y azul** guardándolo en la variable **array RGB[Rojo, Verde, Azul]**
-/* rgb.push(Led[rojo]);
-rgb.push(Led[verde]);
-rgb.push(Led[azul]); */
+const RGB = []
+RGB.push(Led["rojo"]);
+RGB.push(Led["verde"]);
+RGB.push(Led["azul"]);
 
 //9.- Dado un **objeto** de nombre **Portatil** modifica el valor de la propiedad **modelo** por el valor **P345**
 Portatil.modelo = "P345";
@@ -119,6 +120,17 @@ nivelesTinta = Impresora.tinta
 let pixeles = Pantalla.pixeles
 
 //22.- Dado un **objeto** de nombre **Movil** obtén el valor de la propiedad **especificaciones con ["especificaciones"]** guardándolo en la variable **especificaciones**
+let especificaciones = Movil["especificaciones"]
 
+//Dado un **objeto** de nombre **Grupo** modifica el valor de la propiedad **numIntegrantes** por el valor **5**
+Grupo.numIntegrantes = 5
 
+//Dado un **objeto** de nombre **Pantalla** modifica el valor de la propiedad **dimensiones** por el valor **1920x1080**
+Pantalla.dimensiones = "1920x1080"
+
+//Dado un **objeto** de nombre **Led** modifica el valor de la propiedad **encendido** por el valor **false si vale true y true si vale false**
+Led.encendido = !true || !false,
+
+//Dado un **objeto** de nombre **Movil** modifica el valor de la propiedad **temperatura** por el valor **20º**
+Movil.temperatura = "20º"
 
